@@ -1,0 +1,170 @@
+.navlinks{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav1,.nav2,.nav3{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 20px;
+}
+.nav1:hover, .nav2:hover, .nav3:hover {
+  color: green;
+  transition: 0.5s;
+}
+
+.logo{
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+  font-style: italic;  
+}
+
+.td{
+  color: white;
+}
+
+.table{
+  border: 1px solid white;
+}
+
+
+.form{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+  width: 450px;
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+.field{
+  position: relative;
+}
+
+body{
+  background-color: #111;
+}
+
+.con {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: #000; */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  overflow: hidden;
+} 
+
+.login-box {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+input[type="email"],
+input[type="name"],
+input[type="phone"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #fff;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #ccc;
+}
+
+.forgot-link {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  color: #fff;
+}
+
+h2{
+  color: white;
+}
+
+.sub{
+  background-color: white;
+  height: 35px;
+  width: 100px;
+  margin-left:3px ;
+  border-radius: 5px;
+  border: #fff;
+}
+
+.sub:hover{
+  background-color: black;
+  height: 35px;
+  width: 100px;
+  color: white;
+  transition: 0.5s;
+  border-radius: 5px;
+  margin-left:3px ;
+  border: 1px solid#fff;
+  /* margin-left:20px ; */
+}

@@ -49,11 +49,29 @@ return <>
 
         }}>
         <Form>
-            <Field type="text" name="name" placeholder="name"/>
+          <div className="con">
+            <div className="login-box"> 
+            <h1>Edit page</h1>
+            <br />
+            <label htmlFor="name">Name:</label> 
+            <Field type="name" name="name" placeholder="name"/>
+            <br />
+            <br />
+            <label htmlFor="name">Email:</label> 
             <Field type="email" name="email" placeholder="email"/>
-            <Field type="text" name="phone" placeholder="phone"/>
+            <br />
+            <br />
+            <label htmlFor="name">Phone:</label> 
+            <Field type="phone" name="phone" placeholder="phone"/>
+            <br />
+            <br />
+            <label htmlFor="name">Password:</label> 
             <Field type="password" name="password" placeholder="password"/>
-            <button type="submit">Submit</button>
+            <br />
+            <br />
+            <button type="submit" className="sub">Submit</button>
+            </ div>
+          </div>
         </Form>
 
         </Formik>

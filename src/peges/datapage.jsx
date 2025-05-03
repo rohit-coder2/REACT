@@ -25,8 +25,9 @@ const FieldFill = () => {
         return <div>Loading...</div>;
     }
     return <>
+    
+        <div className="con">
 
-        <div>
             <table className="table">
                 <thead>
                     <tr>
@@ -46,7 +47,7 @@ const FieldFill = () => {
                             <td className="td">{element?.email}</td>
                             <td className="td">{element?.phone}</td>
                             <td className="td">
-                                <button
+                                <button className="sub" 
                                     onClick={() => {
                                         navigate(`/list/${element._id}`);
                                     }}
@@ -56,7 +57,7 @@ const FieldFill = () => {
                             </td>
                             <td className="td">
 
-                                <button
+                                <button className="sub"
                                     onClick={() => {
                                         const deleteData = async () => {
                                             await fetch(`http://localhost:2000/contact/${element._id}`, {
@@ -67,6 +68,7 @@ const FieldFill = () => {
                                         }
                                         deleteData();
                                         // navigate(`/field/${element._id}`);
+                                        
                                     }}
                                 >
                                     Delete

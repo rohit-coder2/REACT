@@ -1,6 +1,11 @@
 import { Field, Form, Formik } from "formik";
+import { useContext } from "react";
+import { DataContext } from "../context.jsx";
+import { useNavigate } from "react-router-dom";
 
 const LogPage = () => {
+    const {token , setToken} = useContext(DataContext);
+    const navigate = useNavigate();
     return <>
         <Formik initialValues={{ email: '', password: '' }} onSubmit={(e) => {
             console.log(e);
@@ -14,7 +19,9 @@ const LogPage = () => {
             body: JSON.stringify(e)
           }).then((res) => res.json()).then((res) => {
             console.log(res)
-            // navigate('/home');
+            sessionStorage.setItem('token' ,res.token)
+            setToken(res.token)
+            navigate('/list');
           }).catch((err) => {
             // navigate('/error')
             // console.log(err);
